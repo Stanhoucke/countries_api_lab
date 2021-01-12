@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bundle.js"></script>
 </head>
 <body>
     <div id="app">
+        <p>
+            World population: {{ totalPopulation }}
+        </p>
+        <input v-model="countryToFilter">
 
-        Hello world!
-
+        <h3>Selected Country Details</h3>
+        <p>Country name: {{ filterCountry[0] }}</p>
+        <p>image of country flag</p>
+        
 
     </div>
 </body>
